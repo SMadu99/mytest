@@ -6,7 +6,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
 const occupations = ['VOG Doctor', 'MOH Doctor', 'Dentist', 'MidWife'];
-const areas = ['Hiththatiya', 'Matara Hospital', 'Palatuwa', 'Gampaha', 'Nuwara', 'Galle'];
+const areas = ['Hittatiya Central', 'Hittatiya East', 'Kadeweediya', 'Kotuwegoda', 'Meddawatta', 'Pamburana','Polhena','Thotamuna','Thudawa','Uyanwatta','Walgama Meda','Walgama North','Walgama South','Walpola 1','Walpola 2','Welegoda','Welegoda East','Weliweriya','Weragampita'];
 
 function Register() {
   const [formData, setFormData] = useState({

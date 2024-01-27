@@ -8,18 +8,21 @@
 }
 
 .form{
-  background-color: #fff;
+  background-color: #f7dfdf;
   align-items: center;
   width: 70%;
   margin-left: 150px;
   padding-bottom: 20px;
   padding-top: 15px;
+  color: black;
+  
   
 }
 
 .button{
   margin-top: 20px;
   margin-left: 200px;
+  
  
   
 }

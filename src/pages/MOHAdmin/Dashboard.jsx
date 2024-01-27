@@ -24,7 +24,6 @@ function MOHDashboard() {
           <div className="card-inner">
             <h3>Register Users</h3>
             <div>
-              {" "}
               <FaUserAlt />
             </div>
           </div>
@@ -34,8 +33,7 @@ function MOHDashboard() {
           <div className="card-inner">
             <h3>View Users</h3>
             <div>
-              {" "}
-              <FaSearch />
+             <FaSearch />
             </div>
           </div>
         </NavLink>
@@ -44,7 +42,6 @@ function MOHDashboard() {
           <div className="card-inner">
             <h3>Summary Report</h3>
             <div>
-              {" "}
               <FaRegChartBar />
             </div>
           </div>
@@ -54,7 +51,6 @@ function MOHDashboard() {
           <div className="card-inner">
             <h3>Clinic Schedule</h3>
             <div>
-              {" "}
               <FaUsers />
             </div>
           </div>
@@ -64,7 +60,6 @@ function MOHDashboard() {
           <div className="card-inner">
             <h3>Messages</h3>
             <div>
-              {" "}
               <FaCommentAlt />
             </div>
           </div>
