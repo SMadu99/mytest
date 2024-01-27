@@ -9,13 +9,14 @@
   main{
     width: 100%;
     padding: 20px;
-  }
+ }
   .sidebar{
     background: #000;
     color: #fff;
-    height: 200vh;
+    height: auto;
     width: 200px;
     transition: all 0.5s;
+    
   }
   .top_section{
     display: flex;
@@ -49,3 +50,5 @@
   .icon, .link_text{
     font-size: 20px;
   }
+
+ 

@@ -57,9 +57,10 @@ function Register() {
   return (
     <div className="form">
     <Container maxWidth="sm">
+      <div className="font">
       <Typography variant="h4" align="center" gutterBottom>
         Registration Form
-      </Typography>
+      </Typography></div>
       <form onSubmit={handleSubmit}>
         <TextField
           label="Full Name"

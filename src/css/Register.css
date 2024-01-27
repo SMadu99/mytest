@@ -1,5 +1,11 @@
-/* Add this CSS in your Register.css file or where you manage your styles */
 
+.font{
+  
+  color: black;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  
+}
 
 .form{
   background-color: #fff;
@@ -7,6 +13,7 @@
   width: 70%;
   margin-left: 150px;
   padding-bottom: 10px;
+  padding-top: 15px;
 }
 
 .button{
@@ -15,7 +22,7 @@
   
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
  
   .form{
     background-color: #fff;
