@@ -227,7 +227,7 @@ function Register() {
           }}
         />
         <div className="button">
-        <Button type="submit" variant="contained" color="primary">
+        <Button  type="submit" variant="contained" color="primary">
           Submit
         </Button></div>
       </form>
