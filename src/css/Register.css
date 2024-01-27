@@ -1,0 +1,16 @@
+/* Add this CSS in your Register.css file or where you manage your styles */
+
+
+.form{
+  background-color: #fff;
+  align-items: center;
+  width: 75%;
+  margin-left: 100px;
+  padding-bottom: 10px;
+}
+
+.button{
+  margin-top: 20px;
+  
+  
+}
