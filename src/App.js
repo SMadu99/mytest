@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
+
 import "./css/MOHSidebar.css";
-import { useState } from "react";
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/MOHAdmin/Dashboard";
 import Register from "./pages/MOHAdmin/Register";
 import View from "./pages/MOHAdmin/View";
