@@ -1,5 +1,5 @@
 
-import "../../css/Register.css";
+import "../../css/MOHAdmin/Register.css";
 import React, { useState } from 'react';
 import { TextField, Button, Container, Typography, FormControl, InputLabel, Select, MenuItem, RadioGroup, FormControlLabel, Radio, FormLabel, IconButton, InputAdornment } from '@mui/material';
 import Visibility from '@mui/icons-material/Visibility';

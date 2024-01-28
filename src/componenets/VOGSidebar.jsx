@@ -1,4 +1,4 @@
-import "../css/MOHAdmin/MOHSidebar.css";
+
 import React, { useState } from 'react';
 import {
     FaSearch,
@@ -17,7 +17,7 @@ const MOHSidebar = ({children}) => {
     const toggle = () => setIsOpen (!isOpen);
     const menuItem=[
         {
-            path:"/mohadmindash",
+            path:"/",
             name:"Dashboard",
             icon:<FaTh/>
         },

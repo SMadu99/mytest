@@ -1,4 +1,4 @@
-import "../css/MOHAdmin/MOHSidebar.css";
+
 import React, { useState } from 'react';
 import {
     FaSearch,
@@ -12,12 +12,12 @@ import {
 import { NavLink } from 'react-router-dom';
 
 
-const MOHSidebar = ({children}) => {
+const DentistSidebar = ({children}) => {
     const[isOpen ,setIsOpen] = useState(false);
     const toggle = () => setIsOpen (!isOpen);
     const menuItem=[
         {
-            path:"/mohadmindash",
+            path:"/",
             name:"Dashboard",
             icon:<FaTh/>
         },
@@ -72,6 +72,6 @@ const MOHSidebar = ({children}) => {
     );
 };
 
-export default MOHSidebar;
+export default DentistSidebar;
 
 

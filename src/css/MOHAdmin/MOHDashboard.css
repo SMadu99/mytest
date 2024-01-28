@@ -4,8 +4,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1d2634;
-  color: #9e9ea4;
+  background-color: #edf0f5;
+  color: #ededf0;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -25,6 +25,7 @@ body {
 .main-title {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .main-cards {
@@ -33,7 +34,8 @@ body {
   flex-direction: column;
   column-gap: 100px;
   row-gap: 50px;
-  margin-top: 40px;
+  margin-top: 20px;
+  
   
 }
 

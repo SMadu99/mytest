@@ -1,5 +1,5 @@
 
-import "../../css/Summary.css";
+import "../../css/MOHAdmin/Summary.css";
 import React, { useState } from "react";
 import {
   FormControl,

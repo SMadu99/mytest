@@ -1,4 +1,4 @@
-import "../css/MOHAdmin/MOHSidebar.css";
+import "../css/MOHDoctor/MohDoctorSidebar.css";
 import React, { useState } from 'react';
 import {
     FaSearch,
@@ -12,37 +12,22 @@ import {
 import { NavLink } from 'react-router-dom';
 
 
-const MOHSidebar = ({children}) => {
+const MohDoctorSidebar = ({children}) => {
     const[isOpen ,setIsOpen] = useState(false);
     const toggle = () => setIsOpen (!isOpen);
     const menuItem=[
         {
-            path:"/mohadmindash",
+            path:"/mohdoctordash",
             name:"Dashboard",
             icon:<FaTh/>
         },
         {
-            path:"/register",
-            name:"Register",
+            path:"/doctorpatients",
+            name:"Patients",
             icon:<FaUserAlt/>
         },
         {
-            path:"/view",
-            name:"View",
-            icon:<FaSearch/>
-        },
-        {
-            path:"/summary",
-            name:"Summary",
-            icon:<FaRegChartBar/>
-        },
-        {
-            path:"/clinic",
-            name:"Clinic",
-            icon:<FaUsers/>
-        },
-        {
-            path:"/messages",
+            path:"/doctormessages",
             name:"Messages",
             icon:<FaCommentAlt/>
         },
@@ -72,6 +57,6 @@ const MOHSidebar = ({children}) => {
     );
 };
 
-export default MOHSidebar;
+export default MohDoctorSidebar;
 
 

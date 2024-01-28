@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/MOHDashboard.css";
+import "../../css/MOHAdmin/MOHDashboard.css";
 import { NavLink } from "react-router-dom";
 import {
   FaSearch,
