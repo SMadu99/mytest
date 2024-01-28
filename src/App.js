@@ -1,6 +1,3 @@
-
-
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/MOHAdmin/Dashboard";
 import Register from "./pages/MOHAdmin/Register";
@@ -23,49 +20,9 @@ import DentistPatients from "./pages/Dentist/PatientsRecords";
 import DentistMessages from "./pages/Dentist/Messages";
 
 function App() {
-
-function MOH(){
-  
- 
-      
-}
-
-
-function VOGDoctor(){
-  <VOGSidebar>
-  <Routes>
-    <Route path="/vogdash" element={<VogDashboard />} />
-    <Route path="/vogpatients" element={<VogPatients />} />
-    <Route path="/vogmessages" element={<VogMessages />} />
-  </Routes>
-</VOGSidebar>
-
-}
-
-function MohDoctor(){
-  <MohDoctorSidebar>
-  <Routes>
-    <Route path="/mohdoctordash" element={<MOHDoctorDashboard/>} />
-    <Route path="/doctorpatients" element={<DoctorPatients/>} />
-    <Route path="/doctormessages" element={<DoctorMessages />} />
-  </Routes>
-</MohDoctorSidebar>
-}
-
-function Dentistr(){
-  <DentistSidebar>
-  <Routes>
-    <Route path="/dentistdash" element={<DentistDashboard />} />
-    <Route path="/dentistpatients" element={<DentistPatients />} />
-    <Route path="/dentistmessages" element={<DentistMessages />} />
-  </Routes>
-</DentistSidebar>
-}
-
-return (
-  <BrowserRouter>
-       <MOHSidebar>
-  <Routes>
+  function MOH() {
+    <MOHSidebar>
+    <Routes>
       <Route path="/mohadmindash" element={<Dashboard />} />
       <Route path="/register" element={<Register />} />
       <Route path="/view" element={<View />} />
@@ -74,8 +31,42 @@ return (
       <Route path="/clinic" element={<Clinic />} />
     </Routes>
   </MOHSidebar>
-   
-  </BrowserRouter>
+  }
+
+  function VOGDoctor() {
+    
+  }
+
+  function MohDoctor() {
+    <MohDoctorSidebar>
+      <Routes>
+        <Route path="/mohdoctordash" element={<MOHDoctorDashboard />} />
+        <Route path="/doctorpatients" element={<DoctorPatients />} />
+        <Route path="/doctormessages" element={<DoctorMessages />} />
+      </Routes>
+    </MohDoctorSidebar>;
+  }
+
+  function Dentistr() {
+    <DentistSidebar>
+      <Routes>
+        <Route path="/dentistdash" element={<DentistDashboard />} />
+        <Route path="/dentistpatients" element={<DentistPatients />} />
+        <Route path="/dentistmessages" element={<DentistMessages />} />
+      </Routes>
+    </DentistSidebar>;
+  }
+
+  return (
+    <BrowserRouter>
+      <VOGSidebar>
+      <Routes>
+        <Route path="/vogdash" element={<VogDashboard />} />
+        <Route path="/vogpatients" element={<VogPatients />} />
+        <Route path="/vogmessages" element={<VogMessages />} />
+      </Routes>
+    </VOGSidebar>;
+    </BrowserRouter>
   );
 }
 

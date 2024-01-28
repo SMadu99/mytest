@@ -70,10 +70,8 @@ function MOHDashboard() {
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DateCalendar />
           </LocalizationProvider>
-        </div><div className="calender">
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DateCalendar />
-          </LocalizationProvider>
+        </div><div >
+          
         </div>
       </div>
     </div>

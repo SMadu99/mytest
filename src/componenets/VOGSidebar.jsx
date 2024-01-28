@@ -12,39 +12,24 @@ import {
 import { NavLink } from 'react-router-dom';
 
 
-const MOHSidebar = ({children}) => {
+const VOGSidebar = ({children}) => {
     const[isOpen ,setIsOpen] = useState(false);
     const toggle = () => setIsOpen (!isOpen);
     const menuItem=[
         {
-            path:"/",
+            path:"/vogdash",
             name:"Dashboard",
             icon:<FaTh/>
         },
         {
-            path:"/register",
-            name:"Register",
+            path:"/vogpatients",
+            name:"Patients",
             icon:<FaUserAlt/>
         },
         {
-            path:"/view",
-            name:"View",
-            icon:<FaSearch/>
-        },
-        {
-            path:"/summary",
-            name:"Summary",
-            icon:<FaRegChartBar/>
-        },
-        {
-            path:"/clinic",
-            name:"Clinic",
-            icon:<FaUsers/>
-        },
-        {
-            path:"/messages",
+            path:"/vogmessages",
             name:"Messages",
-            icon:<FaCommentAlt/>
+            icon:<FaSearch/>
         },
         
        
@@ -72,6 +57,6 @@ const MOHSidebar = ({children}) => {
     );
 };
 
-export default MOHSidebar;
+export default VOGSidebar;
 
 
