@@ -4,8 +4,6 @@ import {
     FaSearch,
     FaTh,
     FaBars,
-    FaUserAlt,
-    FaRegChartBar,
     FaCommentAlt,
     FaUsers
 }from "react-icons/fa";
@@ -22,14 +20,19 @@ const VOGSidebar = ({children}) => {
             icon:<FaTh/>
         },
         {
+            path:"/vogpersonal",
+            name:"Personal",
+            icon:<FaSearch/>
+        },
+        {
             path:"/vogpatients",
             name:"Patients",
-            icon:<FaUserAlt/>
+            icon:<FaUsers/>
         },
         {
             path:"/vogmessages",
             name:"Messages",
-            icon:<FaSearch/>
+            icon:<FaCommentAlt/>
         },
         
        

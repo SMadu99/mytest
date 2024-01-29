@@ -15,6 +15,7 @@ import DoctorMessages from "./pages/MOHDoctor/Messages";
 import VogMessages from "./pages/VOGDoctor/Messages";
 import VogPatients from "./pages/VOGDoctor/PatientHistory";
 import VogDashboard from "./pages/VOGDoctor/VogDashboard";
+import VogPersonal from "./pages/VOGDoctor/Personal";
 import DentistDashboard from "./pages/Dentist/DentistDashboard";
 import DentistPatients from "./pages/Dentist/PatientsRecords";
 import DentistMessages from "./pages/Dentist/Messages";
@@ -65,16 +66,14 @@ function App() {
 
   return (
     <BrowserRouter>
-        <MOHSidebar>
-    <Routes>
-      <Route path="/mohadmindash" element={<Dashboard />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/view" element={<View />} />
-      <Route path="/summary" element={<Summary />} />
-      <Route path="/messages" element={<Messages />} />
-      <Route path="/clinic" element={<Clinic />} />
-    </Routes>
-  </MOHSidebar>
+        <VOGSidebar>
+      <Routes>
+        <Route path="/vogdash" element={<VogDashboard />} />
+        <Route path="/vogpersonal" element={<VogPersonal />} />
+        <Route path="/vogpatients" element={<VogPatients />} />
+        <Route path="/vogmessages" element={<VogMessages />} />
+      </Routes>
+    </VOGSidebar>
     </BrowserRouter>
   );
 }
