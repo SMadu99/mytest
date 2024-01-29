@@ -85,87 +85,83 @@ const View = () => {
   };
 
   return (
-    
-      <Container>
-        <Typography variant="h4" align="center" gutterBottom>
-          Occupation Details
-        </Typography>
+    <Container>
+      <Typography variant="h4" align="center" gutterBottom>
+        Occupation Details
+      </Typography>
 
-        <Grid container spacing={3}>
-         
-            <Grid item xs={6}>
-              <Paper elevation={3} style={{ padding: "20px" }}>
-                <Typography variant="h6" gutterBottom>
-                  Select Occupation
-                </Typography>
-                <FormControl fullWidth>
-                  <InputLabel id="occupation-label">Occupation</InputLabel>
-                  <Select
-                    labelId="occupation-label"
-                    id="occupation"
-                    value={selectedOccupation}
-                    onChange={handleOccupationChange}
-                  >
-                    <MenuItem value="">Select</MenuItem>
-                    {occupationsData.map((occupation) => (
-                      <MenuItem key={occupation} value={occupation}>
-                        {occupation}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </Paper>
-            </Grid>
-          
-            <Grid item xs={6}>
-              <Paper elevation={3} style={{ padding: "20px" }}>
-                <Typography variant="h6" gutterBottom>
-                  Details Table
-                </Typography>
-                <TableContainer>
-                  <Table>
-                    <TableHead>
-                      <TableRow>
-                        <TableCell>Name</TableCell>
-                        <TableCell>Contact_No</TableCell>
-                        <TableCell>Area</TableCell>
-                        <TableCell>status</TableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {detailsData.map((row) => (
-                        <TableRow
-                          key={row.id}
-                          onClick={() => handleRowClick(row)}
-                          selected={selectedRow && selectedRow.id === row.id}
-                          hover
-                        >
-                          <TableCell>{row.name}</TableCell>
-                          <TableCell>{row.contact_no}</TableCell>
-                          <TableCell>{row.area}</TableCell>
-
-                          <TableCell>
-                            <Button color="primary" onClick={handleView}>
-                              View
-                            </Button>
-                            <Button color="secondary" onClick={handleUpdate}>
-                              Update
-                            </Button>
-                            <Button color="error" onClick={handleDelete}>
-                              Delete
-                            </Button>
-                          </TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Paper>
-            </Grid>
-          
+      <Grid container spacing={3}>
+        <Grid item xs={6}>
+          <Paper elevation={3} style={{ padding: "20px" }}>
+            <Typography variant="h6" gutterBottom>
+              Select Occupation
+            </Typography>
+            <FormControl fullWidth>
+              <InputLabel id="occupation-label">Occupation</InputLabel>
+              <Select
+                labelId="occupation-label"
+                id="occupation"
+                value={selectedOccupation}
+                onChange={handleOccupationChange}
+              >
+                <MenuItem value="">Select</MenuItem>
+                {occupationsData.map((occupation) => (
+                  <MenuItem key={occupation} value={occupation}>
+                    {occupation}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Paper>
         </Grid>
-      </Container>
-   
+
+        <Grid item xs={6}>
+          <Paper elevation={3} style={{ padding: "20px" }}>
+            <Typography variant="h6" gutterBottom>
+              Details Table
+            </Typography>
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Name</TableCell>
+                    <TableCell>Contact_No</TableCell>
+                    <TableCell>Area</TableCell>
+                    <TableCell>status</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {detailsData.map((row) => (
+                    <TableRow
+                      key={row.id}
+                      onClick={() => handleRowClick(row)}
+                      selected={selectedRow && selectedRow.id === row.id}
+                      hover
+                    >
+                      <TableCell>{row.name}</TableCell>
+                      <TableCell>{row.contact_no}</TableCell>
+                      <TableCell>{row.area}</TableCell>
+
+                      <TableCell>
+                        <Button color="primary" onClick={handleView}>
+                          View
+                        </Button>
+                        <Button color="secondary" onClick={handleUpdate}>
+                          Update
+                        </Button>
+                        <Button color="error" onClick={handleDelete}>
+                          Delete
+                        </Button>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Paper>
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 

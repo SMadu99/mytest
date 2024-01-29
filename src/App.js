@@ -34,7 +34,13 @@ function App() {
   }
 
   function VOGDoctor() {
-    
+    <VOGSidebar>
+      <Routes>
+        <Route path="/vogdash" element={<VogDashboard />} />
+        <Route path="/vogpatients" element={<VogPatients />} />
+        <Route path="/vogmessages" element={<VogMessages />} />
+      </Routes>
+    </VOGSidebar>;
   }
 
   function MohDoctor() {
@@ -59,13 +65,16 @@ function App() {
 
   return (
     <BrowserRouter>
-      <VOGSidebar>
-      <Routes>
-        <Route path="/vogdash" element={<VogDashboard />} />
-        <Route path="/vogpatients" element={<VogPatients />} />
-        <Route path="/vogmessages" element={<VogMessages />} />
-      </Routes>
-    </VOGSidebar>;
+        <MOHSidebar>
+    <Routes>
+      <Route path="/mohadmindash" element={<Dashboard />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/view" element={<View />} />
+      <Route path="/summary" element={<Summary />} />
+      <Route path="/messages" element={<Messages />} />
+      <Route path="/clinic" element={<Clinic />} />
+    </Routes>
+  </MOHSidebar>
     </BrowserRouter>
   );
 }

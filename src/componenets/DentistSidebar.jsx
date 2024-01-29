@@ -17,7 +17,7 @@ const DentistSidebar = ({children}) => {
     const toggle = () => setIsOpen (!isOpen);
     const menuItem=[
         {
-            path:"/",
+            path:"/dentistdash",
             name:"Dashboard",
             icon:<FaTh/>
         },

@@ -11,7 +11,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-columns: 260px 1fr 1fr 1fr ;
   grid-template-rows: 0.4fr 3fr;
   grid-template-areas:
     'sidebar header header header'
@@ -32,9 +32,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
   flex-direction: column;
-  column-gap: 100px;
-  row-gap: 50px;
+  column-gap: 200px;
+  row-gap: 20px;
   margin-top: 20px;
+  
   
   
 }
@@ -46,16 +47,16 @@ body {
   flex-direction: column;
   justify-content: space-around;
   padding: 8px 15px;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 20px;
   margin-bottom: 10px;
-  height: 100%;  
+  height : 80px; 
   color:aliceblue;
-
+  background-color: #00a9bb;
 }
 
 
-
+/*
 
 .card:first-child {
   background-color: #ff293e;
@@ -78,7 +79,7 @@ body {
   background-color: #08855d;
   margin-top: 20px;
 }
-
+*/
 .card-inner {
   display: flex;
   align-items: center;
@@ -92,10 +93,11 @@ body {
   
   margin-top: 70px;
   margin-left: 5px;
-  background-color: rgb(124, 206, 244);
+  background-color: #e4feff;
   border-radius: 15%;
   color: #d50000;
   margin-left: 10px;
+  border: 5px solid #00a9bb;
 }
 
 
