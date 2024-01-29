@@ -9,13 +9,16 @@ import reports from "../../assets/reports.json";
 import Lottie from "lottie-react";
 import Calendar from "../../componenets/Calendar";
 
-
 function MOHDashboard() {
   return (
-    
     <div>
       <div className="main-title">
-        <h3>DASHBOARD</h3>
+        <div>
+          <h2>Hello-Admin</h2>
+        </div>
+        <div>
+          <h4>Welcome to your Dashboard</h4>
+        </div>
       </div>
 
       <div className="main-cards">
@@ -32,7 +35,7 @@ function MOHDashboard() {
           <div className="card-inner">
             <h3>View Users</h3>
             <div>
-            <Lottie style={{ height: 80 }} animationData={midwifeReg} />
+              <Lottie style={{ height: 80 }} animationData={midwifeReg} />
             </div>
           </div>
         </NavLink>
@@ -41,7 +44,7 @@ function MOHDashboard() {
           <div className="card-inner">
             <h3>Summary Report</h3>
             <div>
-            <Lottie style={{ height: 80 }} animationData={reports} />
+              <Lottie style={{ height: 80 }} animationData={reports} />
             </div>
           </div>
         </NavLink>
@@ -50,7 +53,7 @@ function MOHDashboard() {
           <div className="card-inner">
             <h3>Clinic Schedule</h3>
             <div>
-            <Lottie style={{ height: 80 }} animationData={medicare} />
+              <Lottie style={{ height: 80 }} animationData={medicare} />
             </div>
           </div>
         </NavLink>
@@ -59,21 +62,18 @@ function MOHDashboard() {
           <div className="card-inner">
             <h3>Messages</h3>
             <div>
-            <Lottie style={{ height: 80 }} animationData={notification} />
+              <Lottie style={{ height: 80 }} animationData={notification} />
             </div>
           </div>
         </NavLink>
       </div>
       <div className="dashbottom">
         <div className="calender">
-          <Calendar/>
-        </div><div >
-          
+          <Calendar />
         </div>
-        
+        <div></div>
       </div>
-      
-    </div>       
+    </div>
   );
 }
 

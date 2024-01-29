@@ -24,7 +24,9 @@ body {
 
 .main-title {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  color: black;
   
 }
 
@@ -99,8 +101,6 @@ body {
   margin-left: 10px;
   border: 5px solid #00a9bb;
 }
-
-
 
 
 
