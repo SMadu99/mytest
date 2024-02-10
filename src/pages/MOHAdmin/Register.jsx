@@ -55,7 +55,7 @@ function Register() {
   };
 
   return (
-    <div className="form">
+    <div className="form1">
     <Container maxWidth="sm">
       <div className="font">
       <Typography variant="h4" align="center" gutterBottom>
